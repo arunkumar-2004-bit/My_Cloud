@@ -269,7 +269,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 24px;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
         }
 
         .info-card {
@@ -335,6 +335,60 @@
 
         .info-list li strong { color: var(--text); }
 
+        /* Direct Gmail Contact Box */
+        .feedback-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto 80px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            text-align: center;
+        }
+
+        .feedback-section h3 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .feedback-section h3 i { color: var(--primary); }
+
+        .feedback-section p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .gmail-btn {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 14px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.5);
+        }
+
+        .gmail-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -5px rgba(99, 102, 241, 0.8);
+        }
+
         footer {
             text-align: center;
             padding: 40px 0;
@@ -347,6 +401,7 @@
             .arch-diagram { flex-direction: column; padding: 30px 20px; gap: 40px; }
             .connection-tunnel { width: 100%; transform: rotate(90deg); padding: 20px 0; }
             .arch-node { width: 100%; max-width: 320px; }
+            .feedback-section { padding: 24px; }
         }
     </style>
 </head>
@@ -436,13 +491,22 @@
             <div class="info-card">
                 <h3><i class="fa-solid fa-list-check"></i> Setup Instructions</h3>
                 <ul class="info-list">
-                    <li><strong>Step 1:</strong> First click the cloud flared windows application.</li>
-                    <li><strong>Step 2:</strong> After the installation Next click the Personal Cloud Application. Then it will generate the cloudflare link to access your pc from your phone as a cloud storage device.</li>
-                    <li><strong>Step 3:</strong> If your system went to sleep mode it will not work for that; Go to settings ----> System ----> Power & Sleep option; in that change sleep option as never.</li>
-                    <li><strong>Step 4:</strong> For this we need to power on the system every time 24/7 with the internet connection to the pc.</li>
+                    <li><strong>Step 1:</strong> First click the cloud flared windows application[cite: 8, 13].</li>
+                    <li><strong>Step 2:</strong> After the installation Next click the Personal Cloud Application. Then it will generate the cloudflare link to access your pc from your phone as a cloud storage device[cite: 8, 13].</li>
+                    <li><strong>Step 3:</strong> If your system went to sleep mode it will not work for that; Go to settings ----> System ----> Power & Sleep option; in that change sleep option as never[cite: 8, 13].</li>
+                    <li><strong>Step 4:</strong> For this we need to power on the system every time 24/7 with the internet connection to the pc[cite: 8, 13].</li>
                 </ul>
             </div>
         </div>
+
+        <!-- Feedback and Suggestions Section -->
+        <section class="feedback-section">
+            <h3><i class="fa-solid fa-comments"></i> Feedback & Suggestions</h3>
+            <p>Have ideas to improve Personal Cloud or encountered an issue? Send us an email directly!</p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=p.arunkumar200444@gmail.com" target="_blank" class="gmail-btn">
+                <i class="fa-solid fa-envelope"></i> p.arunkumar200444@gmail.com
+            </a>
+        </section>
 
         <!-- Footer -->
         <footer>
